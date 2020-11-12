@@ -28,7 +28,19 @@
         let p4 = document.getElementById('p4').getAttribute('src').substr(3,2);
         let p5 = document.getElementById('p5').getAttribute('src').substr(3,2);
         if (p1==p2 && p2==p3 && p3==p4 && p4==p5) {
-          document.getElementById('demo').innerHTML= "Chúc mừng bạn đã chiến thắng";
+            document.getElementById('demo').innerHTML = "Chúc mừng bạn đã chiến thắng";
+            document.getElementById('p1').style.border = "5px solid red";
+            document.getElementById('p2').style.border = "5px solid red";
+            document.getElementById('p3').style.border = "5px solid red";
+            document.getElementById('p4').style.border = "5px solid red";
+            document.getElementById('p5').style.border = "5px solid red";
+        }
+        else {
+            document.getElementById('p1').style.border = "none"
+            document.getElementById('p2').style.border = "none"
+            document.getElementById('p3').style.border = "none"
+            document.getElementById('p4').style.border = "none"
+            document.getElementById('p5').style.border = "none"
         }
     }
 </script>
